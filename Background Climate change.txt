@@ -1,0 +1,83 @@
+Background
+Climate change is a global challenge that demands comprehensive analysis and proactive
+measures to mitigate its impacts. The increase in greenhouse gas emissions, deforestation, and
+changes in land use have led to unprecedented shifts in climate patterns, resulting in more
+frequent and severe weather events. To address this complex issue, the integration of big data
+technologies, particularly Hadoop, becomes crucial for processing, analyzing, and interpreting
+the vast amount of climate-related data available.
+The project is initiated for a EarthScape Climate Agency, dedicated to monitoring and addressing
+climate change issues. The agency is responsible for collecting vast amounts of climate-related
+data from various sources, including satellites, weather stations, and environmental sensors.
+They seek a robust solution to process, analyze, and visualize this data to gain actionable
+insights for informed decision-making.
+Functional Requirements
+User Authentication and Authorization:
+Implement a secure authentication system for users with different roles (e.g., administrators,
+analysts).
+Define access controls to restrict data access based on user roles and responsibilities.
+Data Ingestion:
+The system should support the ingestion of diverse climate-related datasets, including satellite
+imagery, weather station records, and environmental sensor data.
+Implement mechanisms to handle both historical and real-time data sources.
+Ensure compatibility with common data formats used in climate science.
+Data Storage:
+Utilize the Hadoop Distributed File System (HDFS) for scalable and fault-tolerant storage of large
+climate datasets.
+Implement data partitioning and organization strategies to optimize retrieval and processing.
+Data Processing:
+Implement Hadoop MapReduce jobs for parallel processing of climate data across distributed
+nodes.
+Develop algorithms for the identification of climate patterns, anomalies, and correlations.
+Include mechanisms to handle missing or incomplete data gracefully.
+Real-time Data Processing:
+Integrate real-time data streaming capabilities.
+Ensure seamless integration with batch processing for a comprehensive analysis.
+
+Machine Learning Models:
+Develop machine learning models for predictive analysis of climate trends and impacts.
+Include algorithms for anomaly detection, trend prediction, and correlation analysis.
+Regularly update and refine models based on the latest available data.
+Data Visualization:
+Create interactive dashboards.
+Develop visual representations of climate patterns, anomalies, and predictions.
+Provide customizable and user-friendly interfaces for stakeholders to explore data
+Notifications and Alerts:
+Set up automated notifications and alerts for stakeholders based on predefined thresholds for
+climate anomalies or significant events.
+Enable configurable alerting mechanisms to notify users in real-time.
+Feedback and Support:
+A support system for users to contact for assistance, report issues, and provide feedback.
+
+Non-Functional Requirements
+Performance:
+Implement monitoring tools to track system performance, resource utilization, and data
+processing times.
+Include optimization strategies for enhancing the overall efficiency of the system.
+Data Security:
+Implement encryption mechanisms to secure sensitive climate data during storage and
+transmission.
+Ensure compliance with relevant data protection regulations and standards.
+Reliability:
+Uptime: The application should aim for a minimum of 99% uptime, with scheduled maintenance
+communicated in advance.
+Data Backup: Regular automated data backups must be performed to prevent data loss in case
+of system failures.
+Scalability:
+The architecture should support horizontal scaling to accommodate increased data volumes and
+processing demands.
+Implement load balancing mechanisms for optimal resource utilization.
+
+Performance Monitoring:
+Implement monitoring tools to track system performance, resource utilization, and data
+processing times.
+Include optimization strategies for enhancing the overall efficiency of the system.
+Compliance and Standards:
+Ensure adherence to relevant environmental data standards and protocols.
+Comply with industry best practices for big data processing and analytics.
+Documentation:
+User Documentation: Provide user guides, FAQs, and tutorials to help users understand and
+navigate the application.
+Developer Documentation: Provide thorough documentation for system architecture, data
+processing workflows, and machine learning models. Maintain developer documentation to
+assist in further development and maintenance.
+Video: Provide video displaying complete working of
