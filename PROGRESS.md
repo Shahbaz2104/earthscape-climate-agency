@@ -34,7 +34,7 @@
 - [x] **Auth + RBAC** (`app/auth/`): JWT (HS256), pbkdf2 password hashing, roles admin/analyst, admin-only user management; seeded users: `admin/admin123`, `analyst/analyst123`
 - [x] **Monitoring** (`app/monitoring/`): system metrics (CPU/RAM/disk/uptime), platform overview, on-demand backup (db + namenode) + backup list
 - [x] **Support** (`app/support/`): ticket create/list, admin status updates
-- [x] Smoke tests pass (`tests/smoke.py`): password, JWT, HDFS replication, MapReduce, auth flow
+- [x] pytest suite green: 13 tests (auth, HDFS encryption/replication/load-balancing, MapReduce, ML)
 - [x] **Frontend** (React 19 + TS + Vite): 8 pages — Dashboard (live WS charts + alerts), Climate Data (HDFS browser, upload, corrupt demo), Processing (run jobs, results, history), ML Lab (train anomaly/forecast, correlation), Alerts (rule CRUD + inbox), Monitoring (metrics + backup), Support (tickets), Admin (user mgmt, admin-only)
 - [x] `tsc -b` clean + `vite build` passes
 - [x] **E2E browser-verified** (agent-browser, headless Chrome): login both accounts → dashboard live stream renders → MapReduce job runs from UI (10,605 map outputs, 66 groups, ~1.3 s) → ML training button → alerts page rules/inbox → screenshots saved in `docs/screenshots/`

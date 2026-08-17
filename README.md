@@ -82,7 +82,7 @@ Satellites/weather stations/sensors ──┐
 
 ## Tests
 ```bash
-cd backend && .venv/bin/python tests/smoke.py
+cd backend && .venv/bin/python -m pytest
 ```
 
 ## Project layout

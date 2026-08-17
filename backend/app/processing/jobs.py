@@ -21,12 +21,12 @@ def _temp_trends_map(key, value):
     header, line = value
     row = _row(header, line)
     region, date = _f(row, "region"), _f(row, "date", "timestamp")
+    if not region or not date:
+        return []
     try:
         t = float(_f(row, "temp_c"))
     except (TypeError, ValueError):
-        return []
-    if not region or not date:
-        return []
+        return [(f"{region}::{date[:4]}", None)]
     return [(f"{region}::{date[:4]}", t)]
 
 

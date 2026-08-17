@@ -6,3 +6,7 @@ scikit-learn
 psutil
 python-multipart
 PyJWT
+cryptography
+netCDF4
+matplotlib
+pytest
