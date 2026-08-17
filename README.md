@@ -25,6 +25,8 @@ Open http://localhost:5173
 
 ## Architecture
 
+![EarthScape architecture](docs/architecture.png)
+
 ```
 Satellites/weather stations/sensors ──┐
                                       ▼
