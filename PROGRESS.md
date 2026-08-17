@@ -1,8 +1,18 @@
 # EarthScape Climate Agency — Build Progress
 
-## Status: COMPLETE ✅ (backend + frontend + E2E + docs + requirements-gap closure)
+## Status: COMPLETE ✅ (backend + frontend + E2E + docs + requirements-gap closure + GitHub)
 
-## Gap closure (round 2 — all 6 items done)
+## Round 3 — FYP readiness (all done)
+- [x] **A1** WebSocket cleanup — proper unsubscribe closure in `main.py`
+- [x] **A2** corrupt/delete buttons now admin-only in the UI (`Data.tsx` role prop)
+- [x] **A3** uptime metric fixed (real status + hours; bogus `uptime_pct` removed)
+- [x] **B4** pytest suite (`tests/test_auth.py`, `test_hdfs.py`, `test_mapreduce.py`, `test_ml.py` + `pytest.ini`)
+- [x] **B5** `docs/SRS.md` — requirement-line → design → implementation → verification mapping
+- [x] **B6** `.gitignore` (protects `data/` incl. Fernet key, venv, node_modules)
+- [x] **B7** `docs/architecture.png` — detailed white-background diagram (matplotlib, reproducible via `docs/make_architecture.py`), rendered 4757×1735, content-verified, linked in README
+- [x] **Pushed to GitHub**: https://github.com/Shahbaz2104/earthscape-climate-agency (main, 2 commits)
+
+## Round 2 — requirements-gap closure (all done)
 - [x] **Encryption at rest** — every HDFS block now Fernet-encrypted (key `data/keys/hdfs.key`, 0600, or `EARTHSCAPE_KEY`); verified: no plaintext in blocks, round-trip works, `encrypted: true` in namenode
 - [x] **HTTPS/TLS-ready** — `backend/scripts/gen_cert.sh` (self-signed cert) + documented uvicorn `--ssl-keyfile/--ssl-certfile`; frontend API/WS base URL configurable via `VITE_API_URL`
 - [x] **Automated backups** — scheduler thread: backup at startup + every `BACKUP_INTERVAL_HOURS` (6 h); `/monitor/backup/status` shows schedule; verified fired at startup (20260817-220426)
